@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sockets - Redes de Datos 2017</title>
+  <!--enlaza con el script socket.io que es una libreria que se usa
+  para conseguir una conexion bidireccional (cliente-servidor)-->
+  <script src="/socket.io/socket.io.js"></script>
+  <!--enlaza con el main.js del cliente -->
+  <script src="main.js"></script>
+  <script src="headHTTP.js"></script>
+</head>
+<body>
+  <h1>Paso de mensajes</h1>
+  <!--usamos un div con un id llamado messages donde pondremos todos
+  los mensajes que llegan-->
+  <div id="mensajes"></div>
+  <br/>
+  <!--hacemos un formulario para poder enviar mensajes
+      el cual tendra dos campo para nombre y texto del mensajes
+      y boton para enviar.
+      para saber cuando se envia el formulario utilizamos onsubmit que
+      llamará a la funcion addMessage del main.s-->
+  <form onsubmit="return agregarMensaje()">
+    <input type="text" id="username" placeholder="Tu Nombre" >
+    <input type="text" id="texto" placeholder="Escribe algo...">
+    <input type="submit" value="Enviar!">
+  </form>
+</body>
+</html>

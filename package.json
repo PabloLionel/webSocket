@@ -1,0 +1,21 @@
+{
+  "name": "redes",
+  "version": "1.0.0",
+  "description": "Proyecto de Socket - Redes de Datos 2017",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "ip": "^1.1.5",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "http-headers": "^3.0.1",
+    "nodemon": "^1.12.0"
+  }
+}
